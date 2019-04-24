@@ -1,4 +1,4 @@
-package com.example.jcastro.cameraexample;
+package com.jj.allinone.utils;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -37,14 +37,15 @@ public class CameraUtils {
 
     /** A safe way to get an instance of the Camera object. */
     public static Camera getCameraInstance(){
-        Camera c = null;
+        Camera cam = null;
         try {
-            c = Camera.open(findFrontCamera()); // attempt to get a Camera instance
+            cam = Camera.open(findFrontCamera()); // attempt to get a Camera instance
         }
         catch (Exception e){
             // Camera is not available (in use or does not exist)
+            Log.d(TAG, "getCameraInstance: ");
         }
-        return c; // returns null if camera is unavailable
+        return cam; // returns null if camera is unavailable
     }
 
     public static Camera.PictureCallback getPictureCallback(){

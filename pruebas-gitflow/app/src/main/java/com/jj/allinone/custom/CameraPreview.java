@@ -1,4 +1,4 @@
-package com.example.jcastro.cameraexample;
+package com.jj.allinone.custom;
 
 import android.content.Context;
 import android.hardware.Camera;
@@ -14,6 +14,10 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 
     private SurfaceHolder mHolder;
     private Camera mCamera;
+
+    public CameraPreview(Context context) {
+        super(context);
+    }
 
     public CameraPreview(Context context, Camera camera) {
         super(context);

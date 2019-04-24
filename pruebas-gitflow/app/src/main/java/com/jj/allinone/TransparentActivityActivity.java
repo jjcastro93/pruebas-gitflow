@@ -1,10 +1,11 @@
-package com.example.jcastro.cameraexample;
+package com.jj.allinone;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.example.jcastro.cameraexample.R;
 
 public class TransparentActivityActivity extends AppCompatActivity {
 
